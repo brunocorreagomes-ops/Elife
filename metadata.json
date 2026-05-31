@@ -1,0 +1,6 @@
+{
+  "name": "Elife Marketing Data-Driven",
+  "description": "Plataforma estratégica interativa para plano de ação, KPIs, simuladores de ROI, segmentação avançada de CRM e insights com inteligência artificial para a marca Elife Fitness.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
