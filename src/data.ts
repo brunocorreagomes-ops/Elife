@@ -21,7 +21,6 @@ export const tabs = [
   { id: "crm", label: "👥 Segmentação de CRM" },
   { id: "plano", label: "📈 Plano & Checklist" },
   { id: "kpis", label: "📊 Simulador & ROI" },
-  { id: "ai-insight", label: "🔮 IA Estratégica" },
 ];
 
 export const personas: Persona[] = [

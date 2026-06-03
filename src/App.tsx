@@ -7,19 +7,17 @@ import FourPsTab from "./components/FourPsTab";
 import CrmTab from "./components/CrmTab";
 import PlanoTab from "./components/PlanoTab";
 import KpisTab from "./components/KpisTab";
-import AiInsightTab from "./components/AiInsightTab";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>("brand");
   
-  // Segment bridge state from CRM to AI Coach
+  // Segment state from CRM
   const [selectedSegment, setSelectedSegment] = useState<string>("Todos os Clientes (Geral)");
   const [selectedSegmentCount, setSelectedSegmentCount] = useState<number>(15);
 
   const handleSelectSegment = (segmentName: string, count: number) => {
     setSelectedSegment(segmentName);
     setSelectedSegmentCount(count);
-    setActiveTab("ai-insight");
   };
 
   const renderTabContent = () => {
@@ -38,13 +36,6 @@ export default function App() {
         return <PlanoTab />;
       case "kpis":
         return <KpisTab />;
-      case "ai-insight":
-        return (
-          <AiInsightTab 
-            initialSegmentName={selectedSegment} 
-            initialSegmentCount={selectedSegmentCount} 
-          />
-        );
       default:
         return <BrandingTab />;
     }
