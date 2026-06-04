@@ -74,7 +74,7 @@ export default function App() {
           </div>
 
           {/* Quick Tab Selectors */}
-          <nav className="flex gap-2 overflow-x-auto pb-1 scroll-smooth no-scrollbar select-none">
+          <nav className="flex flex-wrap gap-2 pb-1 select-none">
             {tabs.map((tab) => {
               const isSelected = activeTab === tab.id;
               return (
